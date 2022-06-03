@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/title.css">
+    <link rel="stylesheet" href="css/buttons.css">
+    <title>latin-to-cyrillic-web</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="title">
+            <div class="waviy">
+                <span style="--i:1">Latin</span>
+                <span style="--i:2">-</span>
+                <span style="--i:3">to</span>
+                <span style="--i:4">-</span>
+                <span style="--i:5">cyrillic</span>
+            </div>
+
+            <div class="about">
+                <ul>
+                    <li>If you enter a message in this text entry field, the computer will automatically copy it.</li>
+                    <li>Если вы введете сообщение в это поле ввода текста, компьютер автоматически скопирует его.</li>
+                    <li>Agar siz ushbu matn kiritish joyiga xabar kiritsangiz, kompuyuter avtomatik undan nusxa oladi.
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="latin">
+            <textarea id="latinTextArea" class="latin-text-area" placeholder="Please enter a message ..."
+                onkeyup="typingLatinTextArea()"></textarea>
+        </div>
+        <div class="cyrillic">
+            <textarea id="cyrillicTextArea" class="cyrillic-text-area" placeholder="Cyrillic ..." readonly>
+            </textarea>
+        </div>
+
+        <div class="clear"></div>
+
+        <div class="actions">
+            <button class="button-success" onclick="copyHandler()">Copy</button>
+            <button class="button-clear" onclick="clearLatinTextArea()">Clear</button>
+        </div>
+    </div>
+
+</body>
+
+<script src="script.js"></script>
+
+</html>

@@ -1,0 +1,21 @@
+.waviy {
+    position: relative;
+    font-family: 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif ;
+  }
+  
+  .waviy span {
+    position: relative;
+    display: inline-block;
+    font-size: 40px;
+    color: black;
+    text-transform: uppercase;
+    animation: flip 2s infinite;
+    animation-delay: calc(1.5s * var(--i));
+  }
+  
+  @keyframes flip {
+    0%,
+    80% {
+      transform: rotateY(360deg);
+    }
+  }
